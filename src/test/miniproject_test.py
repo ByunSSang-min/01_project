@@ -1,3 +1,6 @@
+# 미니 프로젝트 - 신호등 및 신호 색상 인식하기
+# YOLO 모델을 훈련시켜 웹캠을 통해 신호등의 신호를 실시간으로 인식시킨다.
+
 import cv2
 from PIL import Image
 from ultralytics import YOLO
