@@ -16,13 +16,13 @@ except Exception:
     pass
 
 # ===== 설정 =====
-UBUNTU_IP = "192.168.0.217"     # <-- Ubuntu IP로 변경
-UDP_PORT  = 9999               # Ubuntu에서 열어둔 포트
-CAM_INDEX = 0                  # 네가 쓰던 카메라 인덱스 그대로
+UBUNTU_IP = "000.000.000.000"   # <-- 본인의 Ubuntu IP로 변경
+UDP_PORT  = 9999                # Ubuntu에서 열어둔 포트
+CAM_INDEX = 0                   # 연결된 웹캠 인덱스
 
-MIN_CONF  = 0.50               # YOLO confidence threshold
-DEBOUNCE_N = 3                 # 같은 상태가 N프레임 연속일 때만 송신 (튀는 값 방지)
-SEND_INTERVAL = 0.20           # 최소 송신 간격(초) (스팸 방지)
+MIN_CONF  = 0.50                # YOLO confidence threshold
+DEBOUNCE_N = 3                  # 같은 상태가 N프레임 연속일 때만 송신 (튀는 값 방지)
+SEND_INTERVAL = 0.20            # 최소 송신 간격(초) (스팸 방지)
 
 # YOLO 모델 로드
 model = YOLO('../models/best_traffic_small_yolo.pt')
