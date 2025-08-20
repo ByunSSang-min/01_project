@@ -8,6 +8,18 @@
 
 - 카메라를 통해 신호등 불빛을 자동 감지하고 그에 맞춰 ROS2의 turtle이 전진, 감속, 정지하는 시스템
 
+**사용 기술**
+
+- python
+    - openCV
+    - ultralytics (YOLO)
+    - socket (IP를 통해 연결하기 위한 라이브러리)
+    - time
+    - torch
+- Linux (Ubuntu)
+- ROS2
+    - turtlesim
+
 ---
 
 ## 📋 프로젝트 구성
