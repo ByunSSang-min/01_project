@@ -249,6 +249,10 @@ ubuntu 터미널에서 turtle_udp_controller.py 코드를 실행시킵니다. �
 
 space bar를 누르면 거북이가 시작점으로 갑니다.
 
+<br><br>
+
+5. 동작을 확인해보겠습니다.
+
 ![Result](result_screenshot/prototype_result4.gif)
 
 GREEN 신호를 인식했을 때 거북이가 0.5 속도로 전진합니다. (turtlesim 기본 속도는 1.0)
