@@ -17,7 +17,7 @@ except Exception:
 
 # ===== 설정 =====
 UBUNTU_IP = "192.168.0.217"     # <-- Ubuntu IP로 변경
-UDP_PORT  = 9999               # Ubuntu에서 열어둔 포트 (turtle_udp_controller.py와 동일)
+UDP_PORT  = 9999               # Ubuntu에서 열어둔 포트
 CAM_INDEX = 0                  # 네가 쓰던 카메라 인덱스 그대로
 
 MIN_CONF  = 0.50               # YOLO confidence threshold
