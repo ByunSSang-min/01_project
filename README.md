@@ -228,3 +228,37 @@ cap.release()
 cv2.destroyAllWindows()
 ```
 
+![Result](result_screenshot/prototype_result1.jpg)
+
+![Result](result_screenshot/prototype_result2.jpg)
+
+사진을 보면 확인할 수 있겠지만, 웹캠 상단에 "state: GREEN" 이 추가된 것을 확인할 수 있습니다.  
+인식하지 않은 상태에선 'NONE' 이라고 표시되며, 이 상태를 UDP 전송을 통해 실시간으로 ubuntu 터미널로  
+보냅니다.
+
+
+![Result](result_screenshot/ubuntu_code.jpg)
+
+![Result](result_screenshot/connect3.jpg)
+
+ubuntu 터미널에서 turtle_udp_controller.py 코드를 실행시킵니다. 이 코드는 Windows에서 받은 신호에 따라  
+거북이의 움직임을 조절할 수 있게 합니다. GREEN 신호를 받으면 전진, YELLOW 신호를 받으면 감속, RED 신호를  
+받으면 정지합니다.
+
+![Result](result_screenshot/prototype_result3.jpg)
+
+space bar를 누르면 거북이가 시작점으로 갑니다.
+
+![Result](result_screenshot/prototype_result4.gif)
+
+GREEN 신호를 인식했을 때 거북이가 0.5 속도로 전진합니다. (turtlesim 기본 속도는 1.0)
+
+![Result](result_screenshot/prototype_result5.gif)
+
+YELLOW 신호를 인식했을 때 거북이가 기존 속도의 절반인 0.25 속도로 감속합니다.
+
+![Result](result_screenshot/prototype_result6.gif)
+
+RED 신호를 인식했을 때 거북이가 완전히 정지합니다.
+
+---
