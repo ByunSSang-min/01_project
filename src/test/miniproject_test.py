@@ -9,7 +9,7 @@ from ultralytics import YOLO
 model = YOLO('../models/best_traffic_small_yolo.pt')
 
 # 카메라 열기
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 while cap.isOpened():
     ret, frame = cap.read()
